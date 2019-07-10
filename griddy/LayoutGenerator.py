@@ -7,7 +7,7 @@ from functools import reduce
 class LayoutGenerator:
     def __init__(self, args):
         self.layout = json.load(open(args.layout), object_pairs_hook=OrderedDict)
-        self.html, self.css = "", ""
+        self.html, self.css = "", "body{\n    width: 100vw;\n    height: 100vh;\n}\n\n"
         self.no_color = args.no_color
         self.walk(self.layout, 0)
     
@@ -20,7 +20,7 @@ class LayoutGenerator:
 
     def generateCSS(self, key, className, isFlex):
         if key == "root":
-            self.css += ".root\n{\n    width: 100vw;\n    height: 100vh;\n"
+            self.css += ".root\n{\n    width: 100%;\n    height: 100%;\n"
         else:
             percent, _ = self.parseKey(key)
             if 'c' in key:

@@ -22,7 +22,7 @@ A layout `.json` file should follow the following syntax:
 - The json file contains one `json` object.
 - Key of the first level of the `json` object should always be `root`.
 - For other levels, the keys should follow the convention:
-    - `percentage`: percentage of the children `<div>`'s height or width w.r.t. its parent.
+    - `percentage`: percentage of the children `<div>`'s height or width with respect to its parent.
     - `layout type`: defines a column layout or a row layout (column layouts will be inside a flex container). If `r` is specified, the percentage is the relative height; if `c` is specified, the percentage is the relative width.
     - `id` (optional): a unique id (can just be integers) to prevent duplicate keys in a `json` object.
 
@@ -74,7 +74,7 @@ Each `<div>` is randomly colored for the sake of clarity. If you are a boring pe
 ```
 griddy <name of the layout file>
 ```
-An `index.html` file and a `styles.css` file will be generated in the same directory where layout json file resides.
+An `index.html` file and a `styles.css` file will be generated in the same directory where layout json file resides. You can simply plugin the generated grid `<div>` (top-level `<div>` of class `root` with style `width: 100%; height:100%`) anywhere in your existing code.
 
 ### Command-line arguments
 |Arguments|Type|default|Explanation|
