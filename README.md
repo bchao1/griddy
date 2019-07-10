@@ -52,11 +52,19 @@ key = percentage + layout type + id
 #### Sample `index.html` output
 
 <p align=center>
-<img src="./sample.png" width="400">
+<img src="./sample.png" width="600">
 </p>
+
+Each `<div>` is randomly colored for the sake of clarity. If you are a boring person, you can specify a `--no-color` argument. 
 
 ### Generate `html` and `css`
 ```
 griddy <name of the layout file>
 ```
 An `index.html` file and a `styles.css` file will be generated in the same directory where layout json file resides.
+
+### Command-line arguments
+|Arguments|Type|default|Explanation|
+|---|---|---|---|
+|**--no-color**|bool|True|Whether to color the `<div>`s|
+|**--react**|bool|False|React-style tags|
