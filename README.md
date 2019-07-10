@@ -4,6 +4,17 @@
 </p>
 
 > Tired of manually splitting `<div>`'s? Try **`griddy`**.
+## Setup 
+### Build from source
+```
+git clone https://github.com/Mckinsey666/griddy.git
+cd griddy
+pip install .
+```
+### From **PyPI**
+```
+pip install griddy
+```
 
 ## Usage
 ### Defining a `layout.json` file
@@ -49,6 +60,8 @@ key = percentage + layout type + id
     }
 }
 ```
+Play with more examples in the `examples` directory.
+
 #### Sample `index.html` output
 
 <p align=center>
