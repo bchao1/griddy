@@ -3,7 +3,7 @@
 <img src="./assets/logo.png" width="200">
 </p>
 
-> Tired of manually splitting `<div>`'s? Try **`griddy`**.
+> 📐📏 Tired of manually splitting `<div>`'s? Try **`griddy`**.
 ## Setup 
 ### Build from source
 ```
