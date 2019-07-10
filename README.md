@@ -49,6 +49,12 @@ key = percentage + layout type + id
     }
 }
 ```
+#### Sample `index.html` output
+
+<p align=center>
+<img src="./sample.png" width="400">
+</p>
+
 ### Generate `html` and `css`
 ```
 griddy <name of the layout file>
