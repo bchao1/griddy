@@ -2,77 +2,77 @@
 {
     width: 10%;
     height: 100%;
-    background-color: rgb(121, 148, 149);
+    background-color: rgb(14, 256, 166);
 }
 
 .level-3-20r1
 {
     width: 100%;
     height: 20%;
-    background-color: rgb(26, 176, 20);
+    background-color: rgb(217, 206, 2);
 }
 
 .level-3-20r2
 {
     width: 100%;
     height: 20%;
-    background-color: rgb(14, 223, 57);
+    background-color: rgb(197, 50, 134);
 }
 
 .level-3-20r3
 {
     width: 100%;
     height: 20%;
-    background-color: rgb(150, 186, 45);
+    background-color: rgb(214, 117, 153);
 }
 
 .level-3-20r4
 {
     width: 100%;
     height: 20%;
-    background-color: rgb(231, 159, 49);
+    background-color: rgb(72, 27, 46);
 }
 
 .level-3-20r5
 {
     width: 100%;
     height: 20%;
-    background-color: rgb(223, 175, 177);
+    background-color: rgb(177, 78, 58);
 }
 
 .level-2-50c
 {
     width: 50%;
     height: 100%;
-    background-color: rgb(198, 119, 69);
+    background-color: rgb(163, 138, 144);
 }
 
 .level-3-50r1
 {
     width: 100%;
     height: 50%;
-    background-color: rgb(44, 42, 249);
+    background-color: rgb(209, 37, 141);
 }
 
 .level-4-30c1
 {
     width: 30%;
     height: 100%;
-    background-color: rgb(136, 136, 134);
+    background-color: rgb(206, 1, 163);
 }
 
 .level-4-30c2
 {
     width: 30%;
     height: 100%;
-    background-color: rgb(79, 197, 94);
+    background-color: rgb(203, 77, 85);
 }
 
 .level-4-40c
 {
     width: 40%;
     height: 100%;
-    background-color: rgb(161, 58, 214);
+    background-color: rgb(235, 207, 253);
 }
 
 .level-3-50r2
@@ -80,14 +80,14 @@
     width: 100%;
     height: 50%;
     display: flex;
-    background-color: rgb(219, 9, 204);
+    background-color: rgb(154, 143, 200);
 }
 
 .level-2-40c
 {
     width: 40%;
     height: 100%;
-    background-color: rgb(51, 87, 48);
+    background-color: rgb(255, 180, 84);
 }
 
 .level-1-70r
@@ -95,34 +95,34 @@
     width: 100%;
     height: 70%;
     display: flex;
-    background-color: rgb(231, 109, 56);
+    background-color: rgb(15, 64, 11);
 }
 
 .level-2-60r
 {
     width: 100%;
     height: 60%;
-    background-color: rgb(124, 16, 177);
+    background-color: rgb(6, 110, 143);
 }
 
 .level-2-40r
 {
     width: 100%;
     height: 40%;
-    background-color: rgb(209, 30, 178);
+    background-color: rgb(116, 128, 225);
 }
 
 .level-1-30r
 {
     width: 100%;
     height: 30%;
-    background-color: rgb(246, 249, 129);
+    background-color: rgb(150, 71, 71);
 }
 
 .root
 {
     width: 100vw;
     height: 100vh;
-    background-color: rgb(136, 116, 240);
+    background-color: rgb(106, 226, 31);
 }
 

@@ -55,12 +55,13 @@ class LayoutParser:
 
     def walk(self, node, level):
         self.checkLayer(node)
+        indent = "    " * (level + 1)
         for key, item in node.items():
             className = "root" if key == 'root' else 'level-{}-{}'.format(level, key)
-            self.html += ("    " * level + "<div class=\"{}\">\n".format(className))
+            self.html += (indent + "<div class=\"{}\">\n".format(className))
             if not item is None:
                 self.walk(item, level + 1)
-            self.html += ("    " * level + "</div>\n")
+            self.html += (indent + "</div>\n")
             self.generateCSS(key, className, self.isFlexNode(item))
 
     def write(self):
