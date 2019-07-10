@@ -32,6 +32,8 @@ class LayoutGenerator:
             self.css += "    display: flex;\n"
         if not self.no_color:
             self.css += "    background-color: {};\n".format(self.getRandomColor())
+        else:
+            self.css += "    box-shadow: inset 0 0 1px black;\n"
         self.css += "}\n\n"
 
     def checkKey(self, key):
