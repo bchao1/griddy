@@ -1,6 +1,6 @@
 # `griddy`: Generate CSS grid layouts FAST
 <p align=center>
-<img src="./logo.png" width="200">
+<img src="./assets/logo.png" width="200">
 </p>
 
 > Tired of manually splitting `<div>`'s? Try **`griddy`**.
@@ -13,7 +13,7 @@ A layout `.json` file should follow the following syntax:
 - For other levels, the keys should follow the convention:
     - `percentage`: percentage of the children `<div>`'s height or width w.r.t. its parent.
     - `layout type`: defines a column layout or a row layout (column layouts will be inside a flex container). If `r` is specified, the percentage is the relative height; if `c` is specified, the percentage is the relative width.
-    - `id`: a unique id (can just be integers) to prevent duplicate keys in a `json` object.
+    - `id` (optional): a unique id (can just be integers) to prevent duplicate keys in a `json` object.
 
 ```
 key = percentage + layout type + id
@@ -52,7 +52,7 @@ key = percentage + layout type + id
 #### Sample `index.html` output
 
 <p align=center>
-<img src="./sample.png" width="600">
+<img src="./assets/sample.png" width="600">
 </p>
 
 Each `<div>` is randomly colored for the sake of clarity. If you are a boring person, you can specify a `--no-color` argument. 
@@ -67,4 +67,3 @@ An `index.html` file and a `styles.css` file will be generated in the same direc
 |Arguments|Type|default|Explanation|
 |---|---|---|---|
 |**--no-color**|bool|True|Whether to color the `<div>`s|
-|**--react**|bool|False|React-style tags|

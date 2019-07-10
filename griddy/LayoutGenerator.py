@@ -4,10 +4,11 @@ from collections import OrderedDict
 from random import randint
 from functools import reduce
 
-class LayoutParser:
-    def __init__(self, filename):
-        self.layout = json.load(open(filename), object_pairs_hook=OrderedDict)
+class LayoutGenerator:
+    def __init__(self, args):
+        self.layout = json.load(open(args.layout), object_pairs_hook=OrderedDict)
         self.html, self.css = "", ""
+        self.no_color = args.no_color
         self.walk(self.layout, 0)
     
     def getRandomColor(self):
@@ -29,7 +30,9 @@ class LayoutParser:
         
         if isFlex:
             self.css += "    display: flex;\n"
-        self.css += "    background-color: {};\n}}\n\n".format(self.getRandomColor())
+        if not self.no_color:
+            self.css += "    background-color: {};\n".format(self.getRandomColor())
+        self.css += "}\n\n"
 
     def checkKey(self, key):
         return
@@ -82,7 +85,3 @@ class LayoutParser:
     def print(self):
         print(self.html)
         print(self.css)
-
-parser = LayoutParser('layout.json')
-parser.print()
-parser.write()
