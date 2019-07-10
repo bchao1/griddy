@@ -65,10 +65,14 @@ Play with more examples in the `examples` directory.
 #### Sample `index.html` output
 
 <p align=center>
-<img src="./assets/sample.png" width="600">
+<img src="./assets/sample-color.png" width="600">
 </p>
 
 Each `<div>` is randomly colored for the sake of clarity. If you are a boring person, you can specify a `--no-color` argument. 
+
+<p align=center>
+<img src="./assets/sample-no-color.png" width="600">
+</p>
 
 ### Generate `html` and `css`
 ```
