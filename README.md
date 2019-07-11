@@ -86,7 +86,7 @@ The above picture shows how the `json` file syntax associates with actual layout
 ```
 griddy <name of the layout file>
 ```
-An `index.html` file and a `styles.css` file will be generated in the same directory where layout json file resides. You can simply plugin the generated grid `<div>` (top-level `<div>` of class `root` with style `width: 100%; height:100%`) anywhere in your existing code.
+An `index.html` file and a `styles.css` file will be generated in the current working directory. You can simply plugin the generated grid `<div>` (top-level `<div>` of class `root` with style `width: 100%; height:100%`) anywhere in your existing code.
 
 ### Command-line arguments
 |Arguments|Type|Specified|Explanation|

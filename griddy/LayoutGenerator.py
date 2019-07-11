@@ -1,8 +1,11 @@
 import json
+import os 
+import webbrowser
 from pprint import pprint
 from collections import OrderedDict    
 from random import randint
 from functools import reduce
+
 
 class LayoutGenerator:
     def __init__(self, args):
@@ -87,3 +90,6 @@ class LayoutGenerator:
     def print(self):
         print(self.html)
         print(self.css)
+
+    def show(self):
+        webbrowser.open("file://" + os.path.realpath('index.html'))
