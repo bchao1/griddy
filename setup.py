@@ -3,7 +3,7 @@ setup(
     name = 'griddy',
     author = "Mckinsey666",
     description = "Generate CSS grid-layouts FAST.",
-    version = '0.2.0',
+    version = '0.3.0',
     packages = ['griddy'],
     url = "https://github.com/Mckinsey666/griddy",
     keywords = "html css javascript grid-layouts flexbox",
