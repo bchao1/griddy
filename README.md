@@ -76,6 +76,12 @@ Here `<div>` blocks are randomly colored for the sake of clarity with the `--col
 
 Plain borders surrounding blocks with `--border` flag specified.
 
+<p align=center>
+<img src="./assets/explanation.png" width="600">
+</p>
+
+The above picture shows how the `json` file syntax associates with actual layout generated.
+
 ### Generate `html` and `css`
 ```
 griddy <name of the layout file>
