@@ -89,7 +89,8 @@ griddy <name of the layout file>
 An `index.html` file and a `styles.css` file will be generated in the current working directory. You can simply plugin the generated grid `<div>` (top-level `<div>` of class `root` with style `width: 100%; height:100%`) anywhere in your existing code.
 
 ### Command-line arguments
-|Arguments|Type|Specified|Explanation|
-|---|---|---|---|
-|**--colored**|bool|True|Whether to color the `<div>` blocks|
-|**--border**|bool|True|`<div>` blocks comes with borders|
+|Arguments|Type|Explanation|
+|---|---|---|
+|**--colored**|bool|Whether to color the `<div>` blocks|
+|**--border**|bool|`<div>` blocks comes with borders|
+|**--show**|bool|Show generated grid in browser|
