@@ -94,3 +94,8 @@ An `index.html` file and a `styles.css` file will be generated in the current wo
 |**--colored**|bool|Whether to color the `<div>` blocks|
 |**--border**|bool|`<div>` blocks comes with borders|
 |**--show**|bool|Show generated grid in browser|
+
+For example,
+```
+griddy layout.json --border --show
+```
