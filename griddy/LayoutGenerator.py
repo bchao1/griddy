@@ -8,7 +8,7 @@ class LayoutGenerator:
     def __init__(self, args):
         self.layout = json.load(open(args.layout), object_pairs_hook=OrderedDict)
         self.html, self.css = "", "body{\n    width: 100vw;\n    height: 100vh;\n}\n\n"
-        self.no_color = args.no_color
+        self.colored, self.border = args.colored, args.border
         self.walk(self.layout, 0)
     
     def getRandomColor(self):
@@ -30,9 +30,9 @@ class LayoutGenerator:
         
         if isFlex:
             self.css += "    display: flex;\n"
-        if not self.no_color:
+        if self.colored:
             self.css += "    background-color: {};\n".format(self.getRandomColor())
-        else:
+        if self.border:
             self.css += "    box-shadow: inset 0 0 1px black;\n"
         self.css += "}\n\n"
 
@@ -59,7 +59,7 @@ class LayoutGenerator:
         return isFlex
 
     def walk(self, node, level):
-        self.checkLayer(node)
+        # self.checkLayer(node)
         indent = "    " * (level + 1)
         for key, item in node.items():
             className = "root" if key == 'root' else 'level-{}-{}'.format(level, key)

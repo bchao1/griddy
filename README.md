@@ -20,11 +20,11 @@ pip install griddy
 ### Defining a `layout.json` file
 A layout `.json` file should follow the following syntax:
 - The json file contains one `json` object.
-- Key of the first level of the `json` object should always be `root`.
-- For other levels, the keys should follow the convention:
-    - `percentage`: percentage of the children `<div>`'s height or width with respect to its parent.
+- First level of the `json` object should have key `root`.
+- For (key, value) pairs in other levels, the keys should abide by the following conventions:
+    - `percentage`: percentage of the children `<div>`'s height or width with respect to its parent's.
     - `layout type`: defines a column layout or a row layout (column layouts will be inside a flex container). If `r` is specified, the percentage is the relative height; if `c` is specified, the percentage is the relative width.
-    - `id` (optional): a unique id (can just be integers) to prevent duplicate keys in a `json` object.
+    - `id` (optional): used to prevent duplicate keys in the `json` object.
 
 ```
 key = percentage + layout type + id
@@ -68,11 +68,13 @@ Play with more examples in the `examples` directory.
 <img src="./assets/sample-color.png" width="600">
 </p>
 
-Each `<div>` is randomly colored for the sake of clarity. If you are a boring person, you can specify a `--no-color` argument. 
+Here `<div>` blocks are randomly colored for the sake of clarity with the `--colored` flag specified.
 
 <p align=center>
 <img src="./assets/sample-no-color.png" width="600">
 </p>
+
+Plain borders surrounding blocks with `--border` flag specified.
 
 ### Generate `html` and `css`
 ```
@@ -81,6 +83,7 @@ griddy <name of the layout file>
 An `index.html` file and a `styles.css` file will be generated in the same directory where layout json file resides. You can simply plugin the generated grid `<div>` (top-level `<div>` of class `root` with style `width: 100%; height:100%`) anywhere in your existing code.
 
 ### Command-line arguments
-|Arguments|Type|default|Explanation|
+|Arguments|Type|Specified|Explanation|
 |---|---|---|---|
-|**--no-color**|bool|True|Whether to color the `<div>`s|
+|**--colored**|bool|True|Whether to color the `<div>` blocks|
+|**--border**|bool|True|`<div>` blocks comes with borders|
